@@ -10,12 +10,6 @@
 # run LLAVA on A100
 # *** Can run on smaller GPU by decreasing evaluation batchsize with flag --bs <batch_size>
 
-# *** On BU's SCC:
-# BLIP: module load gcc/8.3.0 python3/3.8.10 pytorch/1.13.1
-# LLAVA: module load miniconda
-#        conda activate ~/cliao25/LLAVA
-# LLAVA conda environment should be setup according to https://github.com/haotian-liu/LLaVA
-
 ################################### Make LLAVA Captions ####################################
 python scripts/make_llava_captions.py --dataset ImageNet     --prompt "What is in this photo?"
 python scripts/make_llava_captions.py --dataset Caltech101   --prompt "What is in this photo?"
