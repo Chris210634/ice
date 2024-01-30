@@ -1,0 +1,387 @@
+Namespace(accum_iter=1, adapter=0, adaptive_margin=0.0, bitfit=0, bs=32, cache_dir='/projectnb/textconv/cliao25/data', captioner='COCA', checkpoint='', d=768, data_dir='/scratch/cliao25', dataset='', ema=0.995, eval_only=0, ice=True, ice_k=5, ice_lambda=1.0, init_lam=0.0, iters_per_epoch=750, label_smoothing=0.0, layer_start_t=9, layer_start_v=9, lora=0, loss='ce', lr=2e-05, lr_decay=0.0, maple=0, margin=0.0, modelname='coca_ViT-L-14', n_descriptors=-1, n_epochs=1, optimizer='sgd', pretrained='laion2B-s13B-b90k', prompt_lr_multi=10.0, rank=4, resblock_adapter=0, samples_per_class=1, save_model=0, seed=1, shallow_prompt_init='a photo of', shots=16, skip_ema_iters=0, ssf=0, subsample_classes='all', temp=60.0, text_prompt_depth=0, text_prompt_length=0, train_text_encoder=0, train_visual_encoder=0, use_all_logits=True, use_fixed_lambda=True, v=3, visual_prompt_depth=0, visual_prompt_length=0, wd=1e-05)
+EVALUATING ON DATASET:  ImageNet
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/imagenet/shot_16-seed_1.pkl
+ImageNet has 50000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  62.18799948692322
+EVALUATING ON DATASET:  Caltech101
+Reading split from /scratch/cliao25/caltech-101/split_zhou_Caltech101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/caltech-101/shot_16-seed_1.pkl
+Caltech101 has 2465 test samples
+loaded image features from cache/image_features.y_truth.Caltech101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  89.24949169158936
+EVALUATING ON DATASET:  OxfordPets
+Reading split from /scratch/cliao25/oxford_pets/split_zhou_OxfordPets.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_pets/shot_16-seed_1.pkl
+OxfordPets has 3669 test samples
+loaded image features from cache/image_features.y_truth.OxfordPetscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  78.41373682022095
+EVALUATING ON DATASET:  StanfordCars
+Reading split from /scratch/cliao25/stanford_cars/split_zhou_StanfordCars.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/stanford_cars/shot_16-seed_1.pkl
+StanfordCars has 8041 test samples
+loaded image features from cache/image_features.y_truth.StanfordCarscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  84.69096422195435
+EVALUATING ON DATASET:  Flowers102
+Reading split from /scratch/cliao25/oxford_flowers/split_zhou_OxfordFlowers.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_flowers/shot_16-seed_1.pkl
+Flowers102 has 2463 test samples
+loaded image features from cache/image_features.y_truth.Flowers102coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  61.875760555267334
+EVALUATING ON DATASET:  Food101
+Reading split from /scratch/cliao25/food-101/split_zhou_Food101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/food-101/shot_16-seed_1.pkl
+Food101 has 30300 test samples
+loaded image features from cache/image_features.y_truth.Food101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  77.19801664352417
+EVALUATING ON DATASET:  FGVCAircraft
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/fgvc_aircraft/shot_16-seed_1.pkl
+FGVCAircraft has 3333 test samples
+loaded image features from cache/image_features.y_truth.FGVCAircraftcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  40.80407917499542
+EVALUATING ON DATASET:  SUN397
+Reading split from /scratch/cliao25/sun397/split_zhou_SUN397.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/sun397/shot_16-seed_1.pkl
+SUN397 has 19850 test samples
+loaded image features from cache/image_features.y_truth.SUN397coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  59.32997465133667
+EVALUATING ON DATASET:  DTD
+Reading split from /scratch/cliao25/dtd/split_zhou_DescribableTextures.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/dtd/shot_16-seed_1.pkl
+DTD has 1692 test samples
+loaded image features from cache/image_features.y_truth.DTDcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  47.51773178577423
+EVALUATING ON DATASET:  EuroSAT
+Reading split from /scratch/cliao25/eurosat/split_zhou_EuroSAT.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/eurosat/shot_16-seed_1.pkl
+EuroSAT has 8100 test samples
+loaded image features from cache/image_features.y_truth.EuroSATcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  40.23456871509552
+EVALUATING ON DATASET:  UCF101
+Reading split from /scratch/cliao25/ucf101/split_zhou_UCF101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/ucf101/shot_16-seed_1.pkl
+UCF101 has 3783 test samples
+loaded image features from cache/image_features.y_truth.UCF101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  63.283103704452515
+EVALUATING ON DATASET:  ImageNetV2
+ImageNetV2 has 10000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetV2coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  53.79999876022339
+EVALUATING ON DATASET:  ImageNetSketch
+ImageNetSketch has 50889 test samples
+loaded image features from cache/image_features.y_truth.ImageNetSketchcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  52.325648069381714
+EVALUATING ON DATASET:  ImageNetA
+ImageNetA has 7500 test samples
+loaded image features from cache/image_features.y_truth.ImageNetAcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  41.37333333492279
+EVALUATING ON DATASET:  ImageNetR
+ImageNetR has 30000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetRcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  78.88666987419128
+Results:
+,ImageNet,Caltech101,OxfordPets,StanfordCars,Flowers102,Food101,FGVCAircraft,SUN397,DTD,EuroSAT,UCF101,ImageNetV2,ImageNetSketch,ImageNetA,ImageNetR,
+coca_ViT-L-14 laion2B-s13B-b90k COCA ZS,62.18799948692322,89.24949169158936,78.41373682022095,84.69096422195435,61.875760555267334,77.19801664352417,40.80407917499542,59.32997465133667,47.51773178577423,40.23456871509552,63.283103704452515,53.79999876022339,52.325648069381714,41.37333333492279,78.88666987419128,
+Namespace(accum_iter=1, adapter=0, adaptive_margin=0.0, bitfit=0, bs=32, cache_dir='/projectnb/textconv/cliao25/data', captioner='BLIP', checkpoint='', d=768, data_dir='/scratch/cliao25', dataset='', ema=0.995, eval_only=0, ice=True, ice_k=5, ice_lambda=1.0, init_lam=0.0, iters_per_epoch=750, label_smoothing=0.0, layer_start_t=9, layer_start_v=9, lora=0, loss='ce', lr=2e-05, lr_decay=0.0, maple=0, margin=0.0, modelname='coca_ViT-L-14', n_descriptors=-1, n_epochs=1, optimizer='sgd', pretrained='laion2B-s13B-b90k', prompt_lr_multi=10.0, rank=4, resblock_adapter=0, samples_per_class=1, save_model=0, seed=1, shallow_prompt_init='a photo of', shots=16, skip_ema_iters=0, ssf=0, subsample_classes='all', temp=60.0, text_prompt_depth=0, text_prompt_length=0, train_text_encoder=0, train_visual_encoder=0, use_all_logits=True, use_fixed_lambda=True, v=3, visual_prompt_depth=0, visual_prompt_length=0, wd=1e-05)
+EVALUATING ON DATASET:  ImageNet
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/imagenet/shot_16-seed_1.pkl
+ImageNet has 50000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  44.8419988155365
+EVALUATING ON DATASET:  Caltech101
+Reading split from /scratch/cliao25/caltech-101/split_zhou_Caltech101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/caltech-101/shot_16-seed_1.pkl
+Caltech101 has 2465 test samples
+loaded image features from cache/image_features.y_truth.Caltech101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  87.30223178863525
+EVALUATING ON DATASET:  OxfordPets
+Reading split from /scratch/cliao25/oxford_pets/split_zhou_OxfordPets.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_pets/shot_16-seed_1.pkl
+OxfordPets has 3669 test samples
+loaded image features from cache/image_features.y_truth.OxfordPetscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  29.84464466571808
+EVALUATING ON DATASET:  StanfordCars
+Reading split from /scratch/cliao25/stanford_cars/split_zhou_StanfordCars.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/stanford_cars/shot_16-seed_1.pkl
+StanfordCars has 8041 test samples
+loaded image features from cache/image_features.y_truth.StanfordCarscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  51.26228332519531
+EVALUATING ON DATASET:  Flowers102
+Reading split from /scratch/cliao25/oxford_flowers/split_zhou_OxfordFlowers.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_flowers/shot_16-seed_1.pkl
+Flowers102 has 2463 test samples
+loaded image features from cache/image_features.y_truth.Flowers102coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  49.85789656639099
+EVALUATING ON DATASET:  Food101
+Reading split from /scratch/cliao25/food-101/split_zhou_Food101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/food-101/shot_16-seed_1.pkl
+Food101 has 30300 test samples
+loaded image features from cache/image_features.y_truth.Food101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  56.24092221260071
+EVALUATING ON DATASET:  FGVCAircraft
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/fgvc_aircraft/shot_16-seed_1.pkl
+FGVCAircraft has 3333 test samples
+loaded image features from cache/image_features.y_truth.FGVCAircraftcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  7.470747083425522
+EVALUATING ON DATASET:  SUN397
+Reading split from /scratch/cliao25/sun397/split_zhou_SUN397.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/sun397/shot_16-seed_1.pkl
+SUN397 has 19850 test samples
+loaded image features from cache/image_features.y_truth.SUN397coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  49.96473491191864
+EVALUATING ON DATASET:  DTD
+Reading split from /scratch/cliao25/dtd/split_zhou_DescribableTextures.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/dtd/shot_16-seed_1.pkl
+DTD has 1692 test samples
+loaded image features from cache/image_features.y_truth.DTDcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  46.335697174072266
+EVALUATING ON DATASET:  EuroSAT
+Reading split from /scratch/cliao25/eurosat/split_zhou_EuroSAT.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/eurosat/shot_16-seed_1.pkl
+EuroSAT has 8100 test samples
+loaded image features from cache/image_features.y_truth.EuroSATcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  39.407408237457275
+EVALUATING ON DATASET:  UCF101
+Reading split from /scratch/cliao25/ucf101/split_zhou_UCF101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/ucf101/shot_16-seed_1.pkl
+UCF101 has 3783 test samples
+loaded image features from cache/image_features.y_truth.UCF101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  61.93497180938721
+EVALUATING ON DATASET:  ImageNetV2
+ImageNetV2 has 10000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetV2coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  42.1999990940094
+EVALUATING ON DATASET:  ImageNetSketch
+ImageNetSketch has 50889 test samples
+loaded image features from cache/image_features.y_truth.ImageNetSketchcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  47.012123465538025
+EVALUATING ON DATASET:  ImageNetA
+ImageNetA has 7500 test samples
+loaded image features from cache/image_features.y_truth.ImageNetAcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  42.48000085353851
+EVALUATING ON DATASET:  ImageNetR
+ImageNetR has 30000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetRcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  75.62000155448914
+Results:
+,ImageNet,Caltech101,OxfordPets,StanfordCars,Flowers102,Food101,FGVCAircraft,SUN397,DTD,EuroSAT,UCF101,ImageNetV2,ImageNetSketch,ImageNetA,ImageNetR,
+coca_ViT-L-14 laion2B-s13B-b90k BLIP ZS,44.8419988155365,87.30223178863525,29.84464466571808,51.26228332519531,49.85789656639099,56.24092221260071,7.470747083425522,49.96473491191864,46.335697174072266,39.407408237457275,61.93497180938721,42.1999990940094,47.012123465538025,42.48000085353851,75.62000155448914,
+Namespace(accum_iter=1, adapter=0, adaptive_margin=0.0, bitfit=0, bs=32, cache_dir='/projectnb/textconv/cliao25/data', captioner='LLAVA', checkpoint='', d=768, data_dir='/scratch/cliao25', dataset='', ema=0.995, eval_only=0, ice=True, ice_k=5, ice_lambda=1.0, init_lam=0.0, iters_per_epoch=750, label_smoothing=0.0, layer_start_t=9, layer_start_v=9, lora=0, loss='ce', lr=2e-05, lr_decay=0.0, maple=0, margin=0.0, modelname='coca_ViT-L-14', n_descriptors=-1, n_epochs=1, optimizer='sgd', pretrained='laion2B-s13B-b90k', prompt_lr_multi=10.0, rank=4, resblock_adapter=0, samples_per_class=1, save_model=0, seed=1, shallow_prompt_init='a photo of', shots=16, skip_ema_iters=0, ssf=0, subsample_classes='all', temp=60.0, text_prompt_depth=0, text_prompt_length=0, train_text_encoder=0, train_visual_encoder=0, use_all_logits=True, use_fixed_lambda=True, v=3, visual_prompt_depth=0, visual_prompt_length=0, wd=1e-05)
+EVALUATING ON DATASET:  ImageNet
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/imagenet/shot_16-seed_1.pkl
+ImageNet has 50000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  42.42599904537201
+EVALUATING ON DATASET:  Caltech101
+Reading split from /scratch/cliao25/caltech-101/split_zhou_Caltech101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/caltech-101/shot_16-seed_1.pkl
+Caltech101 has 2465 test samples
+loaded image features from cache/image_features.y_truth.Caltech101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  85.35497188568115
+EVALUATING ON DATASET:  OxfordPets
+Reading split from /scratch/cliao25/oxford_pets/split_zhou_OxfordPets.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_pets/shot_16-seed_1.pkl
+OxfordPets has 3669 test samples
+loaded image features from cache/image_features.y_truth.OxfordPetscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  19.76015269756317
+EVALUATING ON DATASET:  StanfordCars
+Reading split from /scratch/cliao25/stanford_cars/split_zhou_StanfordCars.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/stanford_cars/shot_16-seed_1.pkl
+StanfordCars has 8041 test samples
+loaded image features from cache/image_features.y_truth.StanfordCarscoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  17.771422863006592
+EVALUATING ON DATASET:  Flowers102
+Reading split from /scratch/cliao25/oxford_flowers/split_zhou_OxfordFlowers.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/oxford_flowers/shot_16-seed_1.pkl
+Flowers102 has 2463 test samples
+loaded image features from cache/image_features.y_truth.Flowers102coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  16.768169403076172
+EVALUATING ON DATASET:  Food101
+Reading split from /scratch/cliao25/food-101/split_zhou_Food101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/food-101/shot_16-seed_1.pkl
+Food101 has 30300 test samples
+loaded image features from cache/image_features.y_truth.Food101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  43.79867911338806
+EVALUATING ON DATASET:  FGVCAircraft
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/fgvc_aircraft/shot_16-seed_1.pkl
+FGVCAircraft has 3333 test samples
+loaded image features from cache/image_features.y_truth.FGVCAircraftcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  4.920491948723793
+EVALUATING ON DATASET:  SUN397
+Reading split from /scratch/cliao25/sun397/split_zhou_SUN397.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/sun397/shot_16-seed_1.pkl
+SUN397 has 19850 test samples
+loaded image features from cache/image_features.y_truth.SUN397coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  48.99244010448456
+EVALUATING ON DATASET:  DTD
+Reading split from /scratch/cliao25/dtd/split_zhou_DescribableTextures.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/dtd/shot_16-seed_1.pkl
+DTD has 1692 test samples
+loaded image features from cache/image_features.y_truth.DTDcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  41.54846370220184
+EVALUATING ON DATASET:  EuroSAT
+Reading split from /scratch/cliao25/eurosat/split_zhou_EuroSAT.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/eurosat/shot_16-seed_1.pkl
+EuroSAT has 8100 test samples
+loaded image features from cache/image_features.y_truth.EuroSATcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  52.72839665412903
+EVALUATING ON DATASET:  UCF101
+Reading split from /scratch/cliao25/ucf101/split_zhou_UCF101.json
+Loading preprocessed few-shot data from /projectnb/textconv/cliao25/DG/word_soups/datasets/splits/ucf101/shot_16-seed_1.pkl
+UCF101 has 3783 test samples
+loaded image features from cache/image_features.y_truth.UCF101coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  56.806766986846924
+EVALUATING ON DATASET:  ImageNetV2
+ImageNetV2 has 10000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetV2coca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  37.459999322891235
+EVALUATING ON DATASET:  ImageNetSketch
+ImageNetSketch has 50889 test samples
+loaded image features from cache/image_features.y_truth.ImageNetSketchcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  38.2420539855957
+EVALUATING ON DATASET:  ImageNetA
+ImageNetA has 7500 test samples
+loaded image features from cache/image_features.y_truth.ImageNetAcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  38.71999979019165
+EVALUATING ON DATASET:  ImageNetR
+ImageNetR has 30000 test samples
+loaded image features from cache/image_features.y_truth.ImageNetRcoca_ViT-L-14laion2B-s13B-b90k.tup
+pushing captions through encoder
+pushing captions through encoder
+pushing captions through encoder
+ice acc:  66.75666570663452
+Results:
+,ImageNet,Caltech101,OxfordPets,StanfordCars,Flowers102,Food101,FGVCAircraft,SUN397,DTD,EuroSAT,UCF101,ImageNetV2,ImageNetSketch,ImageNetA,ImageNetR,
+coca_ViT-L-14 laion2B-s13B-b90k LLAVA ZS,42.42599904537201,85.35497188568115,19.76015269756317,17.771422863006592,16.768169403076172,43.79867911338806,4.920491948723793,48.99244010448456,41.54846370220184,52.72839665412903,56.806766986846924,37.459999322891235,38.2420539855957,38.71999979019165,66.75666570663452,
