@@ -56,7 +56,7 @@ parser.add_argument('--data_dir', default = "", type =str)  # set to parent dire
 ---------------------------
 
 ### (1) Generate Captions 
-ICE works with any captioner or VLM. We tried CoCa, BLIP-2, and LLAVA. We provide three example captions for each image in each dataset in the `captions/` folder. These can be used directrly. However, if you want to generate them yourself, you can run:
+ICE works with any captioner or VLM. We tried CoCa, BLIP-2, and LLAVA. We provide three example captions for each image in each dataset in the `captions/` folder. These can be used directly. However, if you want to generate them yourself, you can run:
 
 **Run:** `sh run_make_captions.sh`
 
