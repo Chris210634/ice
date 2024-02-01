@@ -1,7 +1,7 @@
 # ICE: Image Caption Encoding 🧊
 -----------------------------------------------------
 
-**Author contributed equally to this repository, the comiit history does not reflect contributions.**
+**Authors contributed equally to this repository, the comiit history does not reflect contributions.**
 
 Code in this repo uses code from [multimodal prompt learning](https://github.com/muzairkhattak/multimodal-prompt-learning), which in turn uses code from [Co-CoOp and CoOp](https://github.com/KaiyangZhou/CoOp).
 
